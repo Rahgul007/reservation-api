@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+</head>
+<body>
+    <h1>hello {{name}}</h1>
+    <form action="" method="POST">
+        <label for="">Depart from</label>
+        <input type="text" name="from" value=''><br><br>
+        <label for="">Going to</label>
+        <input type="text"  name="to" alue=''><br><br>
+        <label for="">Departure date</label>
+        <input type="date" value="depature_date" name="" id=""><br><br>
+        <label for="">Return date</label>
+        <input type="date" value="" name="" id=""><br><br>
+        <button type="submit">Search Flight</button>
+    </form>
+    
+    <div>
+        {% if 'coiambatore'==depart_from %}
+        <p> Only from {{depart_from}} to {{going_to}} buses available   </p>
+        {% else %}:
+        <p>There is no buses is available in this via</p>  
+        {% endif %}
+    </div>
+    
+    
+</body>
+</html>
